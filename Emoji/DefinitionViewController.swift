@@ -12,8 +12,14 @@ class DefinitionViewController: UIViewController {
 
     @IBOutlet weak var Definition: UILabel!
     @IBOutlet weak var emojiLabel: UILabel!
+    
+    @IBOutlet weak var birthlabel: UILabel!
+    
+    
+    
     var emoji = "No Emoji"
     
+    @IBOutlet weak var categorylabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +29,8 @@ class DefinitionViewController: UIViewController {
         if emoji == "✓"{
             
         Definition.text = "you are correct"
+            categorylabel.text = "wink"
+            birthlabel.text = "2011"
         }
         
     }

@@ -49,6 +49,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func makeEmoji() -> [Emoji]{
+       var emoji1 = Emoji()
+        emoji1.stringEmoji = "✓"
+        emoji1.birthYear = 2010
+        emoji1.category = "winkie"
+        emoji1.defenition = "you are correct"
+        
+        return [emoji1,]
+    }
 
 
 }
